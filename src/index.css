@@ -1,13 +1,389 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+	min-height: 100%;
+	color: #2d2d2d;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+}
+
+article, aside, audio, 
+footer, header, nav, section, video {
+	display: block; 
+}
+
+:root {
+  --pri-col- : #1E485E;
+  --sec-col- : #F3932C;
+  --tet-col- : #7BC4EC;
+}
+
+body {
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.main-logo {
+  margin-right: auto;
+  font-weight: 800;
+  font-size: 2rem;
+  color: var(--sec-col-);
+}
+
+.nav-item {
+  margin: 0 8px;
+  text-decoration: none;
+  color: var(--pri-col-);
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+header {
+  background-color: var(--pri-col-);
+  /* background-image: url(./assets/fiabci-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media screen and (max-width:500px) {
+  header {
+    background-size: contain;
+  }
+}
+
+.jubilee {
+  margin-top: 30px;
+}
+
+.tagged {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.tagged-firstline {
+  color: var(--tet-col-);
+  font-weight: 700;
+}
+
+.tagged-secline {
+  color: var(--tet-col-);
+  font-weight: 300;
+}
+
+.time-loc {
+  margin-top: 30px;
+}
+
+.date, .location {
+  color: #fff;
+  font-weight: 300;
+}
+
+.speakerbg {
+  background-color: #e6eff3;
+}
+
+.section-title, .host-title {
+  font-weight: 700;
+  color: var(--pri-col-);
+  margin: 20px 0;
+}
+
+.speaker-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .speaker-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.speaker-section {
+  padding: 40px 0;
+}
+
+.speaker-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--pri-col-);
+  margin:2px 0;
+}
+
+.speaker-position {
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+}
+
+.speaker-role {
+  font-size: 0.9rem;
+  color: var(--sec-col-);
+  margin: 0;
+  padding: 0;
+}
+
+
+/* panelist */
+.panelist {
+  padding: 40px 0;
+}
+
+.panel-card {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px){
+  .panel-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--pri-col-);
+  margin: 0;
+}
+
+.panel-position {
+  font-size: 0.9rem;
+}
+
+.panel-card {
+  border-bottom: 1px solid var(--sec-col-);
+}
+
+.side-attraction {
+  background-color: var(--pri-col-);
+  padding: 40px 0;
+}
+
+.side-attraction h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sa-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .sa-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sa-list {
+  list-style-type: none;
+  background-color: #FFF6D8;
+  color: var(--pri-col-);
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.user-reg {
+  background-color: var(--tet-col-);
+  padding: 20px 0;
+}
+
+.usereg-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media screen and (max-width:500px) {
+  .usereg-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+.host {
+  padding: 40px 0;
+}
+
+.usereg-ticket {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.ticket-section {
+  background-color: var(--tet-col-);
+  padding: 40px 0;
+}
+
+.form-section h2 {
+  color: var(--pri-col-);
+  margin-bottom: 30px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='phone'],
+input[type='email'] {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type='submit'] {
+  padding: 10px 16px;
+  background-color: var(--sec-col-);
+  border-radius: 5px;
+  color: #2d2d2d;
+  font-weight: 600;
+  border: none;
+}
+
+input[type='submit']:hover {
+  background-color: var(--pri-col-);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.ticket-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ticket-section h2 {
+  color: var(--pri-col-);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.fiabci-member {
+  background-color: var(--sec-col-);
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: max-content;
+
+}
+
+.nonfiabci-member {
+  background-color: #fff;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  color: var(--pri-col-);
+  padding: 10px 16px;
+  border-radius: 5px;
+  width: max-content;
+}
+
+footer {
+  background-color: #001219;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-firstline {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--tet-col-);
+}
+
+.footer-secline {
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact {
+  color: var(--sec-col-);
+}
+
+.programme-title {
+  color: var(--pri-col-);
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.programme {
+  background-color: #e6eff3;
+  padding: 40px 0;
+}
+
+.morning {
+  color: var(--pri-col-);
+  margin-bottom: 20px;
+}
+
+.evening {
+  color: var(--pri-col-);
+  margin: 20px 0;
+}
+
+.theme {
+  padding: 40px 0;
+}
+
+.theme-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.theme-group {
+  padding: 0;
+}
+
+.theme-list {
+  list-style-type: none;
+}
+
+.theme-list:nth-child(1) {
+  color:var(--pri-col-);
+  font-weight: 600;
 }

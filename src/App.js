@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar';
+// import Header from './components/Header';
+import SpeakersList from './components/Speakers';
+import SideAttraction from './components/SideAttraction';
+import Hero from './components/Hero';
+import Ticket from './components/Ticket';
+import Footer from './components/Footer';
+import { BrowserRouter } from 'react-router-dom';
+import Programme from './components/Programme';
+import Host from './components/Host';
+import Panelist from './components/Panelist';
+import Theme from './components/Theme';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter className="App">
+    <>
+     <Navbar />
+     <Hero />
+     <Ticket />
+     <Host />
+     <SpeakersList />
+     <Panelist />
+     <Ticket />
+     <Programme />
+     <Theme />
+     <Ticket />
+     <SideAttraction />
+     <Ticket />
+     <Footer />
+    </>
+    </BrowserRouter>
   );
 }
 
