@@ -5,12 +5,11 @@ const Theme = () => {
                 Theme 1: Addressing Housing Affordability in Nigeria.
             </h2>
             <ul className="theme-group">
-                <li className="theme-list">Moderator: Hakeem Ogunniran (Eximia Plc)</li>
+                <li className="theme-list">Moderator: Gbenga Adigun (RERBAR Perfecta)</li>
                 <li className="theme-list">Panellist – Tola Akinhanmi (Stanbic IBTC)</li>
                 <li className="theme-list">Panellist – Mr Yemi Ejidiran (MD, Wemabod)</li>
                 <li className="theme-list">Panellist – Odunayo Ojo (MD UPDC)</li>
-                <li className="theme-list">Panellist – Udo Okonjo (Fine & Country)</li>
-                <li className="theme-list">Panellist – Jide Aromolaran (ED, LSDPC)</li>
+                <li className="theme-list">Panellist – Nehemiah Niyi Aromolaran (ED, LSDPC)</li>
             </ul>
 
             <h2 className="theme-title">
@@ -18,11 +17,11 @@ const Theme = () => {
             </h2>
             <ul className="theme-group">
                 <li className="theme-list">Tolu Dima Okojie (Kola Akomolede and Associates)</li>
-                <li className="theme-list">Panellist – Millicent Duru (FIABCI)</li>
-                <li className="theme-list">Panellist – Arc Yemi Afariogun</li>
-                <li className="theme-list">Panellist – Gbenga Adigun </li>
-                <li className="theme-list">Panellist – Jide Oyewo</li>
-                <li className="theme-list">Panellist – Osagie Alfred (Alfred and Partners)</li>
+                <li className="theme-list">Panellist – Millicent Duru (CEO Giselle Homes)</li>
+                <li className="theme-list">Panellist – Are Yemi Afariogun (R & Y Projects Ltd)</li>
+                <li className="theme-list">Panellist – Jide Oyewo (Dwella Property Co) </li>
+                <li className="theme-list">Panellist – Osagie Alfred (Alfred & Partners)</li>
+                <li className="theme-list">Panellist – Lanre Shonubi (Knight Frank Nigeria)</li>
             </ul>
         </div>
      );

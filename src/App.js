@@ -11,6 +11,7 @@ import Programme from './components/Programme';
 import Host from './components/Host';
 import Panelist from './components/Panelist';
 import Theme from './components/Theme';
+import Groupie from './components/Groupie';
 
 function App() {
 
@@ -20,9 +21,10 @@ function App() {
      <Navbar />
      <Hero />
      <Ticket />
-     <Host />
-     <SpeakersList />
-     <Panelist />
+     <Groupie />
+     {/* <Host /> */}
+     {/* <SpeakersList /> */}
+     {/* <Panelist /> */}
      <Ticket />
      <Programme />
      <Theme />
