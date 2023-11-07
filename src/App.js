@@ -12,6 +12,7 @@ import Host from './components/Host';
 import Panelist from './components/Panelist';
 import Theme from './components/Theme';
 import Groupie from './components/Groupie';
+import Committee from './components/Committee';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
      <Hero />
      <Ticket />
      <Groupie />
+     <Committee />
      {/* <Host /> */}
      {/* <SpeakersList /> */}
      {/* <Panelist /> */}

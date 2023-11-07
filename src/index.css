@@ -387,3 +387,34 @@ footer {
   color:var(--pri-col-);
   font-weight: 600;
 }
+
+.committee-section {
+  padding: 40px 0;
+}
+
+.committee-section h2 {
+  color: var(--pri-col-);
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.committee-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+
+.committee-text {
+  color: var(--pri-col-);
+  font-size: 0.8rem;
+  padding: 4px 0;
+}
+
+@media screen and (max-width: 500px) {
+  .committee-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

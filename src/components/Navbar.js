@@ -5,9 +5,8 @@ const Nabvar = () => {
                     FIABCI@50
                 </h1>
                 <div className="nav-group">
-                    <a href="/" className="nav-item">Speakers</a>
-                    <a href="#speakers" className="nav-item">Programme</a>
-                    <a href="#usereg" className="nav-item">Ticket</a>
+                    <a href="#speakers" className="nav-item">Speakers</a>
+                    <a href="#programme" className="nav-item">Programme</a>
                     <a href="https://paystack.com/pay/fiabciat50" className="nav-item">Register</a>
                 </div>
         </nav>
